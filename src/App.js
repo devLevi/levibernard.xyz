@@ -2,6 +2,8 @@ import './index.css'
 import React, { Component } from 'react'
 import Homepage from './components/Homepage'
 import AboutMe from './components/AboutMe'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
 import FaHome from 'react-icons/lib/fa/home'
 import FaUser from 'react-icons/lib/fa/user'
 import FaConnectdevelop from 'react-icons/lib/fa/connectdevelop'
@@ -102,11 +104,11 @@ class App extends Component {
       },
       {
         label: <FaConnectdevelop className='navIcon' />,
-        content: text.projects,
+        content: <Projects />,
       },
       {
         label: <FaEnvelopeO className='navIcon' />,
-        content: text.contact,
+        content: <Contact />,
       },
     ]
     return (
